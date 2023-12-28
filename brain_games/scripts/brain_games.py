@@ -2,12 +2,15 @@
 
 from brain_games.cli import welcome_user
 
+
 def welcome_brain_games():
-    print(f'Welcome to Brain Games!')
+    print("Welcome to Brain Games!")
+
 
 def main():
     welcome_brain_games()
     welcome_user()
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()
