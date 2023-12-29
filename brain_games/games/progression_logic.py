@@ -6,7 +6,7 @@ import random
 def find_progressions():
     first_number = random.randint(1, 50)
     step_progression = random.randint(1, 20)
-    last_range_loop = random.randint(5, 15)
+    last_range_loop = random.randint(6, 15)
     list_progression = [
         first_number + step_progression * i for i in range(1, last_range_loop)
     ]
