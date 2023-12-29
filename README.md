@@ -9,3 +9,5 @@
 [Asciinema for brain-gcd](https://asciinema.org/a/dVSLDVcRx5qngmmjL7NTXB89Q)
 
 [Asciinema for brain-progression](https://asciinema.org/a/PbpTvFbN6ppcSmu53XY1G15Wk)
+
+[Asciinema for brain-prime](https://asciinema.org/a/Zc3bnADgm0LhCMfpZoy2Nu8rL)

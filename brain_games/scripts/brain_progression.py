@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
 
-from brain_games.progression_logic import progressions_calculate
+from brain_games.games.progression_logic import progressions_calculate
 
 
 def main():
