@@ -24,7 +24,7 @@ def prime_expressions():
 
 def prime_calculate():
     name = welcome_user()
-    print('Answer "yes" if given number is prime. Otherwise answer "no"')
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
     flag = 1
     counter = 0
     while flag:
