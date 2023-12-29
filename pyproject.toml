@@ -1,15 +1,20 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "5 console games: brain-even, brain-cacl, brain_gcd, brain_progression, brain_progression"
 authors = ["Nikolay Skorokhod <mrsuperpuper016@gmail.com>"]
 readme = "README.md"
 packages = [
     { include = "brain_games" },
 ]
+
 [tool.poetry.dependencies]
 python = "^3.11"
 prompt = "^0.4.1"
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^6.1.0"
+
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
 brain-even = "brain_games.scripts.brain_even:main"
@@ -17,9 +22,6 @@ brain-calc = "brain_games.scripts.brain_calc:main"
 brain-gcd = "brain_games.scripts.brain_gcd:main"
 brain-progression = "brain_games.scripts.brain_progression:main"
 brain-prime = "brain_games.scripts.brain_prime:main"
-
-[tool.poetry.group.dev.dependencies]
-flake8 = "^6.1.0"
 
 [build-system]
 requires = ["poetry-core"]
