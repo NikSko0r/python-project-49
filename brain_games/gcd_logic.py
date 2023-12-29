@@ -18,23 +18,22 @@ def gcd_divisor(first_number, second_number):
 def gcd_expressions():
     first_number = random.randint(1, 100)
     second_number = random.randint(1, 100)
-    question = f'{first_number} {second_number}'
+    question = f"{first_number} {second_number}"
     expression = gcd_divisor(first_number, second_number)
     return question, str(expression)
 
 
 def gcd_calculation():
     name = welcome_user()
-    print('Find the greatest common divisor of given numbers.')
+    print("Find the greatest common divisor of given numbers.")
     flag = 1
     counter = 0
     while flag:
         question, expression = gcd_expressions()
         flag = global_logic(question, expression)
-        counter += flag    
+        counter += flag
         if counter == 3:
             print(f"Congratulations, {name}!")
             break
     if flag == 0:
         print(f"Let's try again, {name}!")
-        

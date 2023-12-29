@@ -6,9 +6,9 @@ from brain_games.cli import welcome_user
 def expressions_logic_even():
     question = random.randint(1, 100)
     if question % 2 == 0:
-        expression = 'yes'
+        expression = "yes"
     else:
-        expression = 'no'
+        expression = "no"
     return question, expression
 
 
@@ -20,7 +20,7 @@ def brain_even():
     while flag:
         question, expression = expressions_logic_even()
         flag = global_logic(question, expression)
-        counter += flag    
+        counter += flag
         if counter == 3:
             print(f"Congratulations, {name}!")
             break
