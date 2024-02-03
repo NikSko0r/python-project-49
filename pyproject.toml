@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = "5 console games: "even, calculate, gcd, progression, prime"
+description = "5 console games: even, calculate, gcd, progression, prime"
 authors = ["Nikolay Skorokhod <mrsuperpuper016@gmail.com>"]
 classifiers = [
     "Programming Language :: Python :: 3",
