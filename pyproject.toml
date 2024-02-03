@@ -1,8 +1,12 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = "5 console games: brain-even, brain-cacl, brain_gcd, brain_progression, brain_progression"
+description = "5 console games: "even, calculate, gcd, progression, prime"
 authors = ["Nikolay Skorokhod <mrsuperpuper016@gmail.com>"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+repository = "https://github.com/NikSko0r/python-project-49.git"
 readme = "README.md"
 packages = [
     { include = "brain_games" },

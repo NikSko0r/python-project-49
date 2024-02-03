@@ -3,12 +3,7 @@
 from brain_games.cli import welcome_user
 
 
-def welcome_brain_games():
-    print("Welcome to the Brain Games!")
-
-
 def main():
-    welcome_brain_games()
     welcome_user()
 
 
