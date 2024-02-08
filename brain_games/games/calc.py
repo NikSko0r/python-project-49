@@ -14,5 +14,4 @@ def get_question_and_answer():
     elif math_sign == '-':
         answer = operator.sub(num1, num2)
     question = f'{num1} {math_sign} {num2}'
-    answer = eval(question)
     return question, str(answer), instruction
