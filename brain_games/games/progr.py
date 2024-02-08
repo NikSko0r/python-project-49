@@ -1,18 +1,14 @@
 import random
 
-from brain_games.consts import PROGR_INSTRUCTION, MIN_PROGR_LEN, MAX_PROGR_LEN
-from brain_games.engine import run_game
 
-
-def get_progr_and_miss_num():
+def get_question_and_answer():
+    instruction = 'What number is missing in the progression?'
+    min_progres_len = 5
+    max_progres_len = 10
     start, step = random.randint(1, 100), random.randint(1, 100)
-    row_len = random.randint(MIN_PROGR_LEN, MAX_PROGR_LEN)
+    row_len = random.randint(min_progres_len, max_progres_len)
     miss = random.randint(0, row_len - 1)  # index
-    row_progr = ' '.join(
+    question = ' '.join(
         ['..' if i == miss else str(start + step * i) for i in range(row_len)])
-    miss_num = start + step * miss
-    return row_progr, str(miss_num)
-
-
-def run_progr_game():
-    run_game(get_progr_and_miss_num, PROGR_INSTRUCTION)
+    answer = start + step * miss
+    return question, str(answer), instruction

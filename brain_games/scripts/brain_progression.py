@@ -1,10 +1,11 @@
 #! /usr/bin/env python3
 
-from brain_games.games.progr import run_progr_game
+from brain_games.games import progr
+from brain_games.engine import run_game
 
 
 def main():
-    run_progr_game()
+    run_game(progr)
 
 
 if __name__ == "__main__":

@@ -1,8 +1,5 @@
 import random
 
-from brain_games.consts import PRIME_INSTRUCTION
-from brain_games.engine import run_game
-
 
 def is_prime(num):
     if num < 2:
@@ -13,11 +10,8 @@ def is_prime(num):
     return True
 
 
-def get_num_and_result():
-    num = random.randint(1, 100)
-    result = 'yes' if is_prime(num) else 'no'
-    return num, result
-
-
-def run_prime_game():
-    run_game(get_num_and_result, PRIME_INSTRUCTION)
+def get_question_and_answer():
+    instruct = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+    question = random.randint(1, 100)
+    answer = 'yes' if is_prime(question) else 'no'
+    return question, answer, instruct

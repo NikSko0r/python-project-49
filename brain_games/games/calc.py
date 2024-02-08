@@ -1,16 +1,18 @@
 import random
-
-from brain_games.consts import MATH_SIGNS, CALC_INSTRUCTION
-from brain_games.engine import run_game
+import operator
 
 
-def get_expression_and_result():
+def get_question_and_answer():
+    instruction = 'What is the result of the expression?'
+    math_signs = ('+', '-', '*')
     num1, num2 = random.randint(1, 100), random.randint(1, 100)
-    math_sign = random.choice(MATH_SIGNS)
-    expression = f'{num1} {math_sign} {num2}'
-    result = eval(expression)
-    return expression, str(result)
-
-
-def run_calc_game():
-    run_game(get_expression_and_result, CALC_INSTRUCTION)
+    math_sign = random.choice(math_signs)
+    if math_sign == '+':
+        answer = operator.add(num1, num2)
+    elif math_sign == '*':
+        answer = operator.mul(num1, num2)
+    elif math_sign == '-':
+        answer = operator.sub(num1, num2)
+    question = f'{num1} {math_sign} {num2}'
+    answer = eval(question)
+    return question, str(answer), instruction
