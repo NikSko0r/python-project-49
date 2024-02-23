@@ -1,6 +1,9 @@
 import random
 
 
+INSTRUCTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+
+
 def is_prime(num):
     if num < 2:
         return False
@@ -11,7 +14,6 @@ def is_prime(num):
 
 
 def get_question_and_answer():
-    instruct = 'Answer "yes" if given number is prime. Otherwise answer "no".'
     question = random.randint(1, 100)
     answer = 'yes' if is_prime(question) else 'no'
-    return question, answer, instruct
+    return question, answer
